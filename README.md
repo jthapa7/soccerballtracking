@@ -32,4 +32,4 @@ output_file = "data.yaml"
 with open(output_file, "w") as file:
     yaml.dump(yolo_config, file, default_flow_style=False, sort_keys=False)
 ```
-This will create yaml file that we later use in training purpose.
+This will create yaml file `data.yaml` that we later use in training purpose.
