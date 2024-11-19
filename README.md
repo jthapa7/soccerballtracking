@@ -49,7 +49,7 @@ dataset/
 # 2. Upload the Zip file to Collab Session. In collab you can use the GPU which is free that help to train the model faster than using your CPU.
 # 3. In collab follow these steps:
 ## Step 1.
-    Install `Ultralytics`
+    Install Ultralytics
     ```
     !pip install ultralytics
     ```
@@ -62,7 +62,8 @@ dataset/
     Create a `data.yaml` file using the method above
 ## Step 4.
    Run the following code
-```
+   
+```python
 from ultralytics import YOLO
 
 # Load the model.
@@ -79,7 +80,7 @@ results = model.train(
 ```
 ## Step 5. (Optional)
 You can export the custom model as Edge TPU format so that it runs faster. If you are trying to run YOLO models in Raspberry Pi then I recomment you use this.
-```
+```python
 from ultralytics import YOLO
 
 # Load the YOLO11 model
