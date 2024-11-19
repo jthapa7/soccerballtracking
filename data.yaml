@@ -1,0 +1,7 @@
+
+train: '/content/dataset/train/images'
+val: '/content/dataset/validate/images'
+ 
+# class names
+names: 
+  0: 'ball'
