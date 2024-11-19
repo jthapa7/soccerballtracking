@@ -33,3 +33,17 @@ with open(output_file, "w") as file:
     yaml.dump(yolo_config, file, default_flow_style=False, sort_keys=False)
 ```
 This will create yaml file `data.yaml` that we later use in training purpose.
+# Training Yolo model
+
+# 1. Get the dataset folder with training images and validate images with corresponding labels in .txt file using `LabelImg` app. The structure of the dataset folder should be as shown below
+```
+dataset/
+|-----train
+|       |--images
+|       |--lables (.txt file that you get after labelling using LabelImg)   
+|-----validate
+        |--images
+        |--labels(.txt file that you get after labelling using LabelImg)
+
+```
+
