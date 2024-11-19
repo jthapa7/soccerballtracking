@@ -11,3 +11,25 @@ model = YOLO("/content/runs/detect/yolov8n_custom3/weights/best.pt")
 model.export(format="edgetpu")  # creates 'yolo11n_full_integer_quant_edgetpu.tflite'
 ```
 With this I was getting inference speed of 100ms from 2000ms.
+
+# Create Yaml File using Python
+```python
+import yaml
+
+# Define the configuration
+yolo_config = {
+    "train": "/content/dataset/train/images",
+    "val": "/content/dataset/validate/images",
+    "names": {
+        0: "ball"
+    }
+}
+
+# Specify the output file name
+output_file = "data.yaml"
+
+# Write the configuration to a YAML file with formatting
+with open(output_file, "w") as file:
+    yaml.dump(yolo_config, file, default_flow_style=False, sort_keys=False)
+```
+This will create yaml file that we later use in training purpose.
