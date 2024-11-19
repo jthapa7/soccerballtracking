@@ -48,18 +48,15 @@ dataset/
 ```
 # 2. Upload the Zip file to Collab Session. In collab you can use the GPU which is free that help to train the model faster than using your CPU.
 # 3. In collab follow these steps:
-## Step 1.
-    Install Ultralytics
+## Step 1. Install Ultralytics
     ```
     !pip install ultralytics
     ```
-## Step 2.
-    Unzip the dataset
+## Step 2. Unzip the dataset
     ```
     !unzip /content/dataset.zip
     ```
-## Step 3.
-    Create a `data.yaml` file using the method above
+## Step 3. Create a `data.yaml` file using the method above
 ## Step 4.
    Run the following code
    
