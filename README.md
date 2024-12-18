@@ -73,7 +73,7 @@ results = model.train(
 )
 ```
 ## Step 5. (Optional)
-You can export the custom model as Edge TPU format so that it runs faster. If you are trying to run YOLO models in Raspberry Pi then I recomment you use this.
+You can export the custom model as Edge TPU format so that it runs faster. If you are trying to run YOLO models in Raspberry Pi then I recommend you use this.
 ```python
 from ultralytics import YOLO
 
